@@ -1,5 +1,6 @@
 var results={};
 var defaultOptions={sites:[{url:"http://www.reuters.com"},
+                           {url:"http://hosted.ap.org/"},
                            {url:"http://www.nytimes.com"},
                            {url:"http://www.washingtonpost.com"},
                            {url:"http://www.ft.com"},
@@ -7,7 +8,8 @@ var defaultOptions={sites:[{url:"http://www.reuters.com"},
                            {url:"http://www.guardian.co.uk"},
                            {url:"http://www.dailymail.co.uk"},
                            {url:"http://www.telegraph.co.uk"},
-                           {url:"http://www.prnewswire.com/"}
+                           {url:"http://www.prnewswire.com/"},
+                           {url:"http://www.pcmag.com/"}
                           ]};
 
 RegExp.escape = function(text) {
