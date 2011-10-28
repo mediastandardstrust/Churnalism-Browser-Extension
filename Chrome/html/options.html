@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/css/jquery-ui-1.8.16.custom.css" type="text/css">
+    <script src="/js/jquery.js"></script>
+    <script src="/js/jquery.ui.js"></script>
+    <script src="/js/jquery.tmpl.js"></script>
+    <script src="/js/jquery.validate.js"></script>
+    <script src="/js/options.js"></script>
+  </head>
+  <body>
+    <script src="/js/analytics.js"></script>
+    <style>
+      #options { min-width: 200px; max-width: 600px; margin: auto; margin-top: 2em;  }
+      h1, h2 { padding: .5em; margin: 0; position: relative; }
+      #newSite { padding: .6em; margin: 0; }
+      #newSite input {
+        font-size: 1.5em; padding: 0.5em; border: 1px solid #999; box-shadow: 0 0 6px rgba(0,0,0,0.5);
+        display: block; width: 100%; box-sizing: border-box; -ms-box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+      }
+      #sites-list { margin: 0; list-style: none; padding-left: 0; }
+      #sites-list label { padding: 0.5em; width: 100%;  }
+      #sites-list li:nth-child(odd) { background-color: #eee };
+    </style>
+    <div id="options">
+      <h1 class="ui-widget-header ui-corner-top">
+        Sites Whitelist
+      </h1>
+      <div class="ui-widget ui-widget-content ui-corner-bottom">
+        <form id="newSite">
+          <input name="url" placeholder="Enter a new site here..." class="ui-corner-all" />
+        </form>
+        <ul id="sites-list">
+        </ul>
+      </div>
+      <button id="reset">Reset</button>
+    </div>
+    <script id="site-list-item" type="text/x-jquery-tmpl">
+      <li>
+        <button class="delete">Delete</button>
+        <label>${url}</label>
+      </li>
+    </script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "Churnalism",
+  "version": "0.1",
+  "description": "Check news articles for press release influence.",
+  "background_page": "html/background.html",
+  "options_page": "html/options.html",
+  "page_action" :
+  {
+    "popup" : "popup.html",
+    "default_icon" : "img/searching.png",
+    "default_title" : "Checking for churnalism!"
+  },
+  "permissions": [
+    "tabs", 
+    "http://*/*",
+    "https://*/*"
+  ]
+  // "content_security_policy": "default-src 'self'; style-src 'self'; script-src 'self'; http://us.churnalism.com http://google.com"
+}
